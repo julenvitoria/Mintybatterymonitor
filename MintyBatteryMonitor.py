@@ -31,7 +31,7 @@ def changeicon(percent):
         iconsState = percent
         i = 0
         killid = 0
-        os.system(PNGVIEWPATH + "/pngview -b 0 -l 3000" + percent + " -x 650 -y 10 " + ICONPATH + "/battery" + percent + ".png &")
+        os.system(PNGVIEWPATH + "/pngview -b 0 -l 3000" + percent + " -x 650 -y 0 " + ICONPATH + "/battery" + percent + ".png &")
         out = check_output("ps aux | grep pngview | awk '{ print $2 }'", shell=True)
         nums = out.split('\n')
         for num in nums:
@@ -64,7 +64,7 @@ signal.signal(signal.SIGINT, endProcess)
 
 # Begin Battery Monitoring
 
-os.system(PNGVIEWPATH + "/pngview -b 0 -l 299999 -x 650 -y 10 " + ICONPATH + "/blank.png &")
+os.system(PNGVIEWPATH + "/pngview -b 0 -l 299999 -x 650 -y 0 " + ICONPATH + "/blank.png &")
 try:
     with open(toggleFile, 'r') as f:
         output = f.read()

@@ -44,7 +44,7 @@ def togglestate():
 # Interrupts
 
 shutdown_btn = Button(7, hold_time=1)
-monitor_btn = Button(19, hold_time=2)
+monitor_btn = Button(17, hold_time=2)
 shutdown_btn.when_held = shutdown
 monitor_btn.when_held = togglestate
 pause()
