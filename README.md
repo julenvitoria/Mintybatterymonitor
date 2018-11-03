@@ -1,4 +1,4 @@
-#Script basado en el de HollyHoo modificado para el proyecto miguelito ;)
+#Script basado en el de HollyHoo modificado para el proyecto miguelito ;)!
 
 # Mintybatterymonitor!
 This script is used in conjuction with Helder's battery monitoring board for the MintyPi.
